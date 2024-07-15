@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Search</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center my-4">Image Search</h1>
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h3>Search Images</h3>
+                <form id="search-form">
+                    <div class="form-group">
+                        <label for="search-query">Query</label>
+                        <input type="text" id="search-query" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="image-count">Number of Images</label>
+                        <input type="number" id="image-count" class="form-control" placeholder="Enter number of images" min="1" max="10">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Search</button>
+                </form>
+                <div id="search-results" class="mt-4"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
